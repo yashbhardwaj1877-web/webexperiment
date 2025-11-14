@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q2 — Class vs ID Priority</title>
+  <style>
+    /* class selector */
+    .highlight {
+      color: blue;
+      background: #eef6ff;
+      padding: 6px;
+      border-radius: 4px;
+      font-weight: 400;
+    }
+
+    /* id selector (higher specificity than class) */
+    #special {
+      color: red;
+      background: #ffecec;
+      padding: 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    /* a small visual container */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Priority Test — Q2</h2>
+
+  <!-- 1) plain paragraph (no class or id) -->
+  <p>This is a normal paragraph (no class / id).</p>
+
+  <!-- 2) paragraph with class only -->
+  <p class="highlight">This paragraph uses the <code>.highlight</code> class.</p>
+
+  <!-- 3) paragraph with both class and id (id should win for conflicting properties) -->
+  <p id="special" class="highlight">
+    This paragraph has both <code>id="special"</code> and <code>class="highlight"</code>.
+    The <strong>#special</strong> styles override the <strong>.highlight</strong> styles where they conflict.
+  </p>
+
+</body>
+</html>
