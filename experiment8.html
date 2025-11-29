@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border:
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px blue dotted;
+    cursor:pointer;
+    transition:2s;
+
+
+}
+.card:hover{
+    background-color:lightgrey;
+    transform: scale(5s);
+}
+
+.initials-circle {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+.details strong {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="initials-circle">YV</div>
+            <div class="details">
+                <strong>Yash Bhardwaj</strong>
+                <span>B.Tech - CSE 30</span>
+                <span>Roll No: 2025BO1O1O490</span>
+                <span>1st Year</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="initials-circle">YB</div>
+            <div class="details">
+                <strong>Yashvardhan Sengar</strong>
+                <span>B.Tech - CSE 30</span>
+                <span>Roll No: 2025BO1O1O163</span>
+                <span>1st Year</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="initials-circle">VI</div>
+            <div class="details">
+                <strong>Vindhyavasani</strong>
+                <span>B.Tech - CSE 30</span>
+                <span>Roll No: 2025B010560</span>
+                <span>1th Year</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
