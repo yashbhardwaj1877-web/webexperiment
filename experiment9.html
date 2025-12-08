@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>best selling items</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* --- GRID CONTAINER --- */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
+            gap: 20px;
+        }
+
+        /* --- PRODUCT BOX --- */
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* ------------------- MEDIA QUERIES ------------------- */
+
+        /* Tablet (600px – 1024px) → 2 columns */
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile (≤600px) → 1 column */
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Best Selling Items</h1>
+
+    <div class="product-grid">
+        <div class="product">
+            <img src="wallpapersden.com_razer-headphones-bw_2976x1984.jpg" alt="Product 1">
+            <h3>Rockerz 480 w / beast mode,RGB LEDs (6 light modes),60HRS Playback & ENx tech bluetooth</h3>
+            <p>₹1599 – Best quality product.</p>
+            <button class="Buy Now">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="OIP.jpg" alt="Product 2">
+            <h3>MRF Genius Virat kohli edition english willow cricket bat </h3>
+            <p>₹3399 – Amazing design.</p>
+            <button class="Buy Now">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="OIP (1).jpg" alt="Product 3">
+            <h3>DSC Professional cricket shoe,size:10UK/11US/44EU,lasting performance for men</h3>
+            <p>₹4299 – New Edition </p>
+            <button class="Buy Now">Buy Now</button>
+                
+        </div>
+
+        <div class="product">
+            <img src="sg_cb_2503._large.jpg" alt="Product 4">
+            <h3>SG Cricket Leather Ball </h3>
+            <p>₹3797 – Premium build quality.</p>
+            <button class="Buy Now">Buy Now</button>
+        </div>
+    </div>
+
+</body>
+</html>
